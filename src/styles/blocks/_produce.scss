@@ -1,0 +1,45 @@
+.produce {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  
+  &__information {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__title {
+    font-family: Roboto Condensed;
+    font-size: 25px;
+  }
+
+  &__text {
+    font-family: Roboto Condensed;
+    font-size: 20px;
+  }
+
+  &__video-list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__left-video-block {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+  }
+
+  &__video-item {
+    display: flex;
+  }
+
+  &__video {
+    width: 500px;
+  }
+
+  &__video--vertical {
+    width: 350px;
+    height: 100%;
+  }
+}

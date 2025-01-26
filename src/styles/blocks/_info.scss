@@ -1,0 +1,42 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__title {
+    font-family: Roboto Condensed;
+
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-family: Roboto Condensed;
+
+    font-size: 22px;
+  }
+
+  &__item {
+   font-size: 20px;
+   line-height: 25px;
+   
+  }
+
+
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style:disc;
+    list-style-position: inside ;
+  }
+
+ &__list &__item::marker {
+    color: #ff6400;
+    font-size: 35px;
+ 
+    
+  }
+}

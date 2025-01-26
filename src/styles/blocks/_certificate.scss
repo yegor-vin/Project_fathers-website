@@ -1,0 +1,28 @@
+.certificate {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__title {
+    font-family: Roboto Condensed;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  &__img {
+    width: 300px;
+
+    cursor: pointer;
+    transition: 0.3s ease-in;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+
+
+  &__image-container {
+    display: flex;
+    gap: 30px;
+  }
+}

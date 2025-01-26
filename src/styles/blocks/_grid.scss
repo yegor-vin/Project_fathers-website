@@ -1,0 +1,35 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  height: 100%;
+
+  @include onTablet {
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 0;
+    column-gap: 24px;
+  }
+
+  @include onDesktop {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &__item-image--left {
+    grid-column: 1/8;
+    width: 100%;
+}
+
+&__item-image--rigth {
+    grid-column: 6/-1;
+    width: 100%;
+
+  }
+
+  &__item-text--rigth {
+    grid-column: 8/-1;
+  }
+
+  &__item-text--left{
+    grid-column: 1/6;
+  }
+}

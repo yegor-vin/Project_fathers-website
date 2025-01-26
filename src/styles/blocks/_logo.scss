@@ -1,0 +1,12 @@
+.logo {
+  &__image {
+    width: 150px;
+    height: 90px;
+
+    display: flex;
+    @include onTablet {
+      width: 200px;
+      height: 120px;
+    }
+  }
+}

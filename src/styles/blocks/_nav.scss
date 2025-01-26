@@ -1,0 +1,46 @@
+.nav {
+  &__list {
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+    }
+  }
+
+  &__item {
+    border: transparent 1px solid;
+    transition: all 0.3s linear;
+    display: flex;
+    height: 120px;
+    align-items: center;
+    padding: 0 25px;
+  }
+  &__item:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  &__item--goods {
+    position: relative;
+  }
+  
+  &__item:hover &__link {
+    color: #ff6400;
+    border-color: #b9b9b9;
+  }
+
+  &__link {
+    display: flex;
+    padding: 0 0 5px 0;
+    border-bottom: 1px transparent solid;
+
+    @include onDesktop {
+      font-size: 22px;
+      color: #fff;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: Roboto Condensed;
+      transition: all 0.3s linear;
+    }
+  }
+
+}

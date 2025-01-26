@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEBSITE</title>
+    <link rel="stylesheet" href="./styles/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="app.js" defer></script>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a class="header__logo logo" href="index.html">
+            <!-- COMMENT -->
+            <img
+              src="/images/Logo.png"
+              alt="Акумулятори для дому Dawnice"
+              class="logo__image"
+            />
+          </a>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#about-us">Про нас</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Акумулятори</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Гарантії</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Корисна інформація</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__menu menu">
+            <div class="header_dropdown dropdown">
+              <div class="dropdown__icon-container">
+                <svg class="dropdown__icon">
+                  <use href="./images/icons/sprite.svg#phone"></use>
+                </svg>
+              </div>
+
+              <div class="dropdown__content">
+                <a href="tel:+380675059113" class="dropdown__link"
+                  >+38 067 505 9113</a
+                ><a href="tel:+380674402138" class="dropdown__link"
+                  >+38 067 440 2138</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- <aside class="nav-page">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link"></a></li>
+            <li class="nav__item"><a href="#" class="nav__link"></a></li>
+            <li class="nav__item"><a href="#" class="nav__link"></a></li>
+            <li class="nav__item"><a href="#" class="nav__link"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside> -->
+
+    <section class="hero">
+      <h1 class="hero__title">
+        Тепло і світло у кожну оселю <br />
+        <br />
+        <br />
+        Акумулятори
+      </h1>
+    </section>
+
+    <section class="about-us" id="#about-us">
+      <div class="container">
+        <h2 class="about-us__title">Про нас</h2>
+        <div class="about-us__content">
+          <div class="about-us__image-container">
+            <img
+              class="about-us__image"
+              src="/images/about_us-image1.jpg"
+              alt="Перевірка при виробництві акумуляторів"
+            />
+            <img
+              class="about-us__image"
+              src="/images/about_us-image2.jpg"
+              alt="Тестування акумуляторів"
+            />
+            <img
+              class="about-us__image"
+              src="/images/about_us-image3.jpg"
+              alt="Завод-виробник акумуляторів"
+            />
+          </div>
+
+          <div class="about-us__description">
+            <p class="about-us__text">
+              Наша компанія є імпортером продукції Dawnice від завода-виробника,
+              що був заснований ще в 2009 році. Завод Dawnice є провідним
+              виробником акумуляторів, інтегрованими в усьому світі,
+              розташований у Цзянсі, Китай. Виробник поєднує новітню технологію
+              акумуляторів із величезною потужністю. Зріла система управління
+              виробництвом спрямована на забезпечення клієнтів продукцією
+              відмінної якості та конкурентоспроможної ціни.
+              <br />
+              <br />
+              Завод Dawnice має 5 повністю автоматизованих виробничих ліній і
+              зосереджується на незалежних дослідженнях, розробках і
+              виробництві. 80% інженерів працюють у галузі виробництва літієвих
+              батарей більше 10 років. У промисловості літієвих акумуляторів
+              було отримано понад 100 технічних патентів, у тому числі понад 70
+              основних патентів, понад 20 патентів на винаходи та понад 10
+              нагород за інноваційні технології. Завод має сертифікати, визнані
+              основними країнами: CE, UL, UN38.3, Rohs, IEC62619, ISO14001,
+              ISO9001.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="batteries">
+      <div class="container">
+        <h2 class="batteries__title">Акумулятори</h2>
+        <div class="batteries__content">
+          <div class="batteries__image-container">
+            <img
+              class="batteries__main-img"
+              src="/images/10kw-solar-battery-600x600.jpg "
+              alt="Акумулятор"
+            />
+
+            <ul class="batteries__list slider">
+              <li class="slider__item">
+                <a class="slider__link" href="#">
+                  <img
+                    src="/images/10kw-solar-battery-600x600.jpg"
+                    alt="Акумулятор"
+                    class="slider__image"
+                  />
+                </a>
+              </li>
+              <li class="slider__item">
+                <a class="slider__link" href="#">
+                  <img
+                    src="/images/10kwh-battery-sale-points-600x600.webp"
+                    alt="Головні фішки акумуляторів"
+                    class="slider__image"
+                  />
+                </a>
+              </li>
+              <li class="slider__item">
+                <a class="slider__link" href="#">
+                  <img
+                    src="/images/10kw-battery-connection-diagram-600x600.webp"
+                    alt="#"
+                    class="slider__image"
+                  />
+                </a>
+              </li>
+              <li class="slider__item">
+                <a class="slider__link" href="#">
+                  <img
+                    src="/images/10kw-lithium-ion-battery-600x600.webp"
+                    alt="Приклад під'єднання акумуляторів"
+                    class="slider__image"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="batteries__description description">
+            <h3 class="description__title">
+              Акумулятори Dawnice для зберігання електроенергії
+            </h3>
+            <p class="description__text">
+              Акумулятор легко інтегрується у ваш дім, оптимізуючи простір,
+              забезпечуючи вражаючу енергоємність. Налаштуйте свої потреби в
+              накопиченні енергії за допомогою різноманітних ємностей і
+              конфігурацій, забезпечуючи ідеальну відповідність потребам вашого
+              домогосподарства. Насолоджуйтесь статистикою в режимі реального
+              часу щодо споживання енергії та продуктивність системи завдяки
+              інтуїтивно зрозумілим інтерфейсам моніторингу. Відчуйте надійне
+              резервне живлення під час відключень, забезпечуючи безперервну
+              роботу основних приладів і пристроїв. Акумулятори Dawnice
+              гармонують з наявною сонячною або енергетичною системою,
+              максимізуючи використання чистих і відновлюваних джерел енергії.
+              Використовуйте накопичену енергію в години пікового тарифу,
+              мінімізуючи витрати на комунальні послуги та оптимізуючи
+              споживання енергії.
+            </p>
+          </div>
+        </div>
+        <button class="accordion"><span>Детальніше</span></button>
+        <div class="panel">
+          <div class="panel__content">
+            <div class="panel__text-container">
+              <h3 class="panel__title">
+                Функції та характеристики домашнього акумулятора Dawnice
+              </h3>
+              <p class="panel__text">
+                Для виробництва акумуляторів використовуються ексклюзивні
+                елементи REPT LiFePO4 класу A, відомих своєю високою щільністю
+                енергії, що забезпечує як безпеку, так і послідовність.
+              </p>
+            </div>
+            <ul class="panel__list">
+              <li class="panel__item">
+                <div class="panel__grid grid">
+                  <img
+                    class="panel__image grid__item-image--left"
+                    src="./images/grid-image--1.jpg"
+                    alt="Дизайн акумуляторів"
+                  />
+
+                  <div class="pannel__info grid__item-text--rigth info">
+                    <h4 class="info__title">Привабливий дизайн</h4>
+                    <p class="info__text">
+                      Dawnice LiFePo4 акумулятори компактні за формою, зі
+                      зручними кнопки налаштування та готовими до підключення
+                      кабелями та аксесуарами в комплекті. Акумулятори можуть
+                      бути встановлені паралельно, а інтегрована система захисту
+                      BMS ідеально підходить для гібридних та автономних
+                      інверторів.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="panel__item">
+                <div class="panel__grid grid">
+                  <div class="pannel__info grid__item-text--left info">
+                    <h4 class="info__title">Різноманіття у використанні</h4>
+                    <p class="info__text">
+                      Серія Dawnice Lithium Ion Power Wall широко
+                      використовується у сонячних системах для побутового та
+                      комерційного використання з більш, ніж 6000 циклів
+                      глубокого розряду. Модульна конструкція дозволяє
+                      розширюватися у будь-який час. Енергетична система Dawnice
+                      отримала світове визнання.
+                    </p>
+                  </div>
+                  <img
+                    class="panel__image grid__item-image--rigth"
+                    src="./images/grid-image--2.jpg"
+                    alt="Використання акумуляторів"
+                  />
+                </div>
+              </li>
+
+              <li class="panel__item">
+                <div class="panel__grid grid">
+                  <img
+                    class="panel__image grid__item-image--left"
+                    src="./images/grid-image--3.jpg"
+                    alt="Дизайн акумуляторів"
+                  />
+
+                  <div class="pannel__info grid__item-text--rigth info">
+                    <h4 class="info__title">BMS</h4>
+                    <p class="info__text">
+                      Вбудована система управління акумуляторними батареями
+                      об’єднує багаторівневі функції безпеки, включаючи захист
+                      від перезаряду та глубокого розряду, контроль напруги та
+                      температури, захисти від перевантаження за струмом,
+                      моніторинг і балансування акумуляторних батарей, а також
+                      тепловий захист.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="panel__item">
+                <div class="panel__grid grid">
+                  <div class="pannel__info grid__item-text--left info">
+                    <h4 class="info__title">
+                      Що ви отримаєте при роботі з Dawnice?
+                    </h4>
+                    <ul class="info__list">
+                      <li class="info__item">Високоякісну продукцію</li>
+                      <li class="info__item">
+                        Професійне обслуговування клієнтів від фахівців заводу
+                      </li>
+                      <li class="info__item">
+                        Проектування рішення сонячних систем
+                      </li>
+                      <li class="info__item">
+                        Системи зберігання літієвих батарей
+                      </li>
+                    </ul>
+                  </div>
+                  <img
+                    class="panel__image grid__item-image--rigth"
+                    src="./images/grid-image--4.jpg"
+                    alt="Використання акумуляторів"
+                  />
+                </div>
+              </li>
+            </ul>
+            <div class="panel__table-image-container">
+              <h3 class="panel__tabel-title">Технічні характеристики</h3>
+              <img
+                class="panel__table-img"
+                src="/images/Character-table.jpg"
+                alt="Таблиця характеристик акумуляторів"
+              />
+
+              <div class="panel__modal">
+                <span class="panel__modal-close">&times;</span>
+
+                <img class="panel__modal-content" id="img01" />
+
+                <div class="panel__caption"></div>
+              </div>
+            </div>
+
+             <!-- [x] FIXME: fix classes -->
+        
+            <a href="/files/dawnice_datasheet.pdf" class="panel__link">
+              Каталог
+            </a>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="guarantees">
+      <div class="container">
+        <h2 class="guarantees__title">Гарантії</h2>
+        <div class="guarantees__content">
+          <p class="guarantees__text">
+            Завод-виробник надає 10-річну на акумулятори Dawnice. З даною
+            гарантією Ви можете ознайомитися на нашому сайті. Для гарантії
+            клієнту достатньо лише видаткової накладної на придбання
+            акумуляторів в нашій компанії.
+            <br />
+            <br />
+
+            Ми залучаємо технічних спеціалістів заводу протягом гарантійного
+            терміну роботи обладнання. У випадку виявлення заводського браку –
+            завод—виробник бере на себе зобов’язання із заміни такого товару на
+            новий.
+          </p>
+
+          <ul class="guarantees__list">
+            <li class="guarantees__item">
+              <a
+                href="/files/Wall-mounted-User-Manual.pdf"
+                class="guarantees__link"
+              >
+                Інструкція на акумулятори Dawnice
+              </a>
+            </li>
+            <li
+              class="guarantees__item guarantees__item--certificate certificate"
+            >
+              <h3 class="certificate__title">Сертифікати</h3>
+              <div class="certificate__image-container">
+                <img
+                  class="certificate__img certificate__img-1"
+                  src="/images/Certification-1.jpg"
+                  alt="#"
+                />
+
+                <div class="modal">
+                  <span class="modal__close">&times;</span>
+
+                  <img class="modal__content" />
+                </div>
+                <img
+                  class="certificate__img certificate__img-2"
+                  src="/images/Certification-2.jpg"
+                  alt="#"
+                />
+              </div>
+            </li>
+            <li class="guarantees__item">
+              <a
+                href="/files/Dawnice-Warranty-Agreement.pdf"
+                class="guarantees__link"
+              >
+                Гарантія на акумулятори Dawnice
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="useful">
+      <div class="container">
+        <h2 class="useful__title">Корисна інформація</h2>
+        <div class="useful__content">
+          <div class="useful__produce produce">
+            <div class="produce__information">
+              <h3 class="produce__title">Виробництво</h3>
+              <p class="produce__text">
+                Виробництво акумуляторів Dawnice проходить декілька етапів, один
+                і найважливіших з яких - це забезпечення контролю якості готової
+                продукції. Акумулятори перевіряють на розряд-заряд і втрату
+                ємності. Надійність акумуляторів Dawnice обумовлена
+                використанням акумуляторних батарей А-класу REPT.
+              </p>
+            </div>
+            <div class="produce__videos">
+              <ul class="produce__video-list">
+                <div class="produce__left-video-block">
+                  <li class="produce__video-item">
+                    <video class="produce__video" controls>
+                      <source
+                        src="/videos/Production-video.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </li>
+                  <li class="produce__video-item">
+                    <video class="produce__video" controls>
+                      <source
+                        src="/videos/Production-video-1.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </li>
+                </div>
+                <li class="produce__video-item">
+                  <video class="produce__video--vertical" controls>
+                    <source
+                      src="/videos/Production-video-2.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="useful__wifi wifi">
+            <div class="wifi__information">
+              <h3 class="wifi__title">WiFi & Bluetooth налаштування</h3>
+              <p class="wifi__text">
+                Акумулятори Dawnice мають вбудований WiFi та Bluetooth модулі.
+                Це допоможе вам налаштувати зв’язок вашого акумулятора із
+                смартфоном для оперативного відслідковування стану вашої
+                батареї. Налаштовується згідно інструкцій, наведених нижче
+              </p>
+            </div>
+
+            <div class="wifi__videos">
+              <video class="wifi__video" controls>
+                <source src="/videos/WIFI-video-2.mp4" type="video/mp4" />
+              </video>
+            </div>
+
+            <a href="" class="wifi__btn-link">
+              <button class="wifi__button" type="button">efhij</button>
+            </a>
+          </div>
+          <div class="useful__set-up set-up">
+            <div class="set-up__information">
+              <h3 class="set-up__title"> Інсталяція</h3>
+              <p class="set-up__text">
+                Фото влаштування систем енергозбереження та альтернативного забезпечення житла електроенергією при використанні акумуляторів Dawnice
+              </p>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__contacts"></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

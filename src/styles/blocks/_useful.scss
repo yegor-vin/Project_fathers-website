@@ -1,0 +1,14 @@
+.useful {
+  padding: 120px 0;
+  &__title {
+    font-family: Roboto Condensed;
+    font-size: 48px;
+    margin: 0 0 56px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}

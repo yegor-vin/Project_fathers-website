@@ -1,0 +1,23 @@
+@mixin onMobile {
+    @media screen and (min-width: 320px) {
+        @content;
+    }
+}
+
+@mixin onTablet {
+    @media screen and (min-width: 744px) {
+        @content;
+    }
+}
+
+@mixin onDesktop {
+    @media screen and (min-width: 1260px) {
+        @content;
+    }
+}
+
+@mixin onDesktopXL {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}

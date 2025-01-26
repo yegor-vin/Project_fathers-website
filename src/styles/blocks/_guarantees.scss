@@ -1,0 +1,44 @@
+.guarantees {
+  padding: 120px 0;
+  background-color: #f5f4fa;
+
+  &__content {
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__title {
+    font-family: Roboto Condensed;
+
+    font-size: 48px;
+    margin: 0 0 56px;
+  }
+
+  &__text {
+    font-family: Roboto Condensed;
+    font-size: 20px;
+    letter-spacing: 1;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__link {
+    font-family: Roboto Condensed;
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+   text-decoration:underline;
+    transition: color 0.3s linear;
+  }
+
+  &__link:hover {
+    color: #ff6400;
+  }
+}
+
