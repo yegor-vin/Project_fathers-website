@@ -4,7 +4,9 @@
   "main": "src/index.html",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build --public-url /project_fathers-website/  src/index.html"
+    "build": "parcel build --public-url /project_fathers-website/  src/index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
@@ -47,6 +49,7 @@
     "escalade": "^3.2.0",
     "fill-range": "^7.1.1",
     "get-port": "^4.2.0",
+    "gh-pages": "^6.3.0",
     "globals": "^13.24.0",
     "has-flag": "^4.0.0",
     "htmlnano": "^2.1.1",
