@@ -4,14 +4,16 @@
   "main": "src/index.html",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build --public-url /project_fathers-website/  src/index.html",
+    "build": "parcel build --public-url /project_fathers-website/  src/index.html --no-minify",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cssnano": "^7.0.6",
     "parcel": "^1.12.3",
+    "postcss": "^8.5.2",
     "sass": "^1.80.7"
   },
   "dependencies": {
