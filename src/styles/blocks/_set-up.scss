@@ -1,0 +1,22 @@
+.set-up {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  
+    &__title {
+      font-family: Roboto Condensed;
+      font-size: 25px;
+    }
+  
+    &__text {
+      font-family: Roboto Condensed;
+      font-size: 20px;
+    }
+  
+    &__information {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+}

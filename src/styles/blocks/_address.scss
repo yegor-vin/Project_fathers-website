@@ -1,0 +1,40 @@
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  &__title {
+    font-size: 25px;
+    color: #fff;
+    font-family: Roboto Condensed;
+  }
+
+  &__underground {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__icon-underground {
+    color: #fff;
+    font-weight: bold;
+    background-color: green;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  &__underground-text {
+    color: #fff;
+    font-size: 20px;
+    font-family: Roboto Condensed;
+  }
+
+  &__address {
+    color: #fff;
+    font-size: 20px;
+    font-family: Roboto Condensed;
+  }
+}

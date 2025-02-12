@@ -1,0 +1,24 @@
+.section-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  list-style: disc;
+
+  &__item {
+    &::marker {
+      color: #fff;
+    }
+  }
+
+  &__link {
+    font-family: Roboto Condensed;
+
+    font-size: 25px;
+    color: #fff;
+    transition: all 0.3s linear;
+
+    &:hover {
+      color: #2f303a;
+    }
+  }
+}
