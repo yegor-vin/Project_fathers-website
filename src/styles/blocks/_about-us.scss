@@ -11,23 +11,50 @@
 
   &__image-container {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+
+    @include onTablet {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
   }
 
   &__image {
-    width: 350px;
+    width: 100%;
+
+    @include onTablet {
+      width: 180px;
+    }
+    @include onDesktop {
+      width: 350px;
+    }
   }
 
   &__title {
     font-family: Roboto Condensed;
-    font-size: 48px;
-    margin: 0 0 56px;
-    font-weight: 700px  ;
+    font-weight: 700px;
+    font-size: 32px;
+    margin: 0 0 48px;
+
+    @include onTablet {
+      font-size: 40px;
+      margin: 0 0 56px;
+    }
+
+    @include onDesktop {
+      font-size: 48px;
+    }
   }
 
   &__text {
     font-family: Roboto Condensed;
-    font-size: 20px;
+    text-align: justify;
+    font-size: 18px;
+
+    @include onDesktop {
+      font-size: 20px;
+    }
   }
 }

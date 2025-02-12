@@ -5,38 +5,56 @@
 
   &__title {
     font-family: Roboto Condensed;
-
-    font-size: 35px;
+    margin-bottom: 10px;
     font-weight: 700;
-    margin-bottom: 20px;
+    font-size: 25px;
+
+    @include onTablet {
+      font-size: 28px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 20px;
+
+      font-size: 35px;
+    }
   }
 
   &__text {
     font-family: Roboto Condensed;
+    font-size: 18px;
 
-    font-size: 22px;
+    @include onDesktop {
+      font-size: 22px;
+    }
   }
 
   &__item {
-   font-size: 20px;
-   line-height: 25px;
-   
+    font-size: 18px;
+    line-height: 22px;
+
+
+    @include onDesktop {
+      font-size: 20px;
+      line-height: 25px;
+    }
   }
-
-
 
   &__list {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    list-style:disc;
-    list-style-position: inside ;
+    list-style: disc;
+    list-style-position: inside;
   }
 
- &__list &__item::marker {
+  &__list &__item::marker {
     color: #ff6400;
-    font-size: 35px;
- 
-    
+    font-size: 25px;
+
+    @include onDesktop {
+
+      font-size: 35px;
+    }
   }
 }

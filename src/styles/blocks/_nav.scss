@@ -23,15 +23,32 @@
     position: relative;
   }
   
-  &__item:hover &__link {
-    color: #ff6400;
-    border-color: #b9b9b9;
-  }
+
 
   &__link {
     display: flex;
+    position: relative;
     padding: 0 0 5px 0;
-    border-bottom: 1px transparent solid;
+
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #e79d14;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
 
     @include onDesktop {
       font-size: 22px;

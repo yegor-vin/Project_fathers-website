@@ -2,31 +2,54 @@
   padding: 120px 0;
   display: flex;
   flex-direction: column;
-  gap: 50px;  
+  gap: 50px;
 
   &__title {
-    font-size: 48px;
-    margin-bottom: 56px;
+    font-family: Roboto Condensed;
+    font-weight: 700px;
+    margin: 0 0 48px;
+
+    font-size: 32px;
+
+    @include onTablet {
+      font-size: 40px;
+      margin: 0 0 56px;
+    }
+
+    @include onDesktop {
+      font-size: 48px;
+    }
   }
 
   &__content {
     display: flex;
-    gap: 10px;
     padding: 0 0 50px;
+    flex-direction: column;
+    gap: 30px;
+
+    @include onDesktop {
+      flex-direction: row;
+      gap: 30px;
+    }
   }
 
-
   &__main-img {
-    width: 500px;
-    
+  width: 100%;
+
+    @include onDesktop {
+      width: 500px;
+    }
   }
 
   &__image-container {
     display: flex;
     flex-direction: column;
 
-    width: fit-content;
+    width: 100%;
+
+    gap: 20px;
+    @include onDesktop {
+      width: fit-content;
+    }
   }
-
-
 }

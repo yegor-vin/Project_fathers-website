@@ -3,14 +3,14 @@
   justify-content: space-evenly;
   gap: 20px;
 
-  &__item {
-  }
-
   &__link {
     display: flex;
   }
 
   &__image {
-    width: 80px;
+    width: 45px;
+    @include onTablet {
+      width: 80px;
+    }
   }
 }

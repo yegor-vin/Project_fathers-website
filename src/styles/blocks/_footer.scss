@@ -1,5 +1,22 @@
 .footer {
+  padding: 60px 0 ;
+  background: linear-gradient(135deg, #e79d14 40%, #2f303a 0%);
+ 
+
+  &__content {
+    display: flex;
+    gap: 400px;
+  }
+
+  &__left-block {
+    display: flex;
+  gap: 100px;
+  align-items: end;
+  }
+
+  &__map {
+    width: 250px;
     height: 250px;
-    background-color: #2f303a ;
-    padding: 60px 0 0;
+
+  }
 }
