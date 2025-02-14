@@ -200,4 +200,4 @@ batteriesGallery.addEventListener('click', function (event) {
   mainImg.src = imageLink;
 });
 },{}]},{},["A2T1"], null)
-//# sourceMappingURL=/project_fathers-website/app.cc670166.js.map
+//# sourceMappingURL=/Project_fathers-website/app.cc670166.js.map
