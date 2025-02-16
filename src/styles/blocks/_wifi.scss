@@ -5,12 +5,20 @@
 
   &__title {
     font-family: Roboto Condensed;
-    font-size: 25px;
+    font-size: 22px;
+
+    @include onTablet {
+      font-size: 25px;
+    }
   }
 
   &__text {
     font-family: Roboto Condensed;
-    font-size: 20px;
+    font-size: 18px;
+
+    @include onDesktop {
+      font-size: 20px;
+    }
   }
 
   &__information {
@@ -25,7 +33,10 @@
   }
 
   &__video {
-    width: 800px;
+    width: 100%;
+    @include onDesktop {
+      width: 800px;
+    }
   }
 
   &__btn-link {
@@ -35,7 +46,6 @@
     justify-content: center;
     align-items: center;
 
-    width: 300px;
     height: 56px;
 
     border-radius: 10px;
@@ -47,6 +57,11 @@
 
     transition: all 0.3s linear;
     cursor: pointer;
+    width: 100%;
+
+    @include onTablet {
+      width: 300px;
+    }
 
     &:hover {
       background-color: #1b2129;

@@ -10,37 +10,72 @@
   }
   &__title {
     font-family: Roboto Condensed;
-    font-size: 25px;
+    font-size: 22px;
+
+    @include onTablet {
+      font-size: 25px;
+    }
   }
 
   &__text {
     font-family: Roboto Condensed;
-    font-size: 20px;
+
+    font-size: 18px;
+
+    @include onDesktop {
+      font-size: 20px;
+    }
   }
 
   &__video-list {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 30px;
+
+    @include onDesktop {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
   }
 
   &__left-video-block {
     display: flex;
     flex-direction: column;
 
-    justify-content: space-between;
+    gap: 50px;
+
+    @include onDesktop {
+      justify-content: space-between;
+    }
   }
 
   &__video-item {
     display: flex;
+
+    justify-content: center;
   }
 
   &__video {
-    width: 500px;
+    width: 100%;
+
+    @include onTablet {
+      width: 90%;
+    }
+    @include onDesktop {
+      width: 500px;
+    }
   }
 
   &__video--vertical {
-    width: 350px;
-    height: 100%;
+    width: 80%;
+
+    @include onTablet {
+      width: 70%;
+    }
+    @include onDesktop {
+      width: 350px;
+      height: 100%;
+    }
   }
 
   &__btn-link {
@@ -50,7 +85,6 @@
     justify-content: center;
     align-items: center;
 
-    width: 300px;
     height: 56px;
 
     border-radius: 10px;
@@ -62,6 +96,11 @@
 
     transition: all 0.3s linear;
     cursor: pointer;
+    width: 100%;
+
+    @include onTablet {
+      width: 300px;
+    }
 
     &:hover {
       background-color: #1b2129;

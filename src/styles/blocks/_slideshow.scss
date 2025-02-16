@@ -1,24 +1,25 @@
 .slideshow {
-    max-width: 600px;
-    position: relative;
-    margin: 0 auto;
+  max-width: 600px;
+  position: relative;
+  margin: 0 auto;
 
-    &__img-container {
-        display: none;
+  &__img-container {
+    display: none;
+  }
 
+  &__text {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
 
+  &__image {
+    width: 100%;
+
+    @include onTablet {
+      height: 600px;
     }
-
-    &__text {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-    }
-
-    &__image {
-        width: 100%;
-        height: 600px
-    }
+  }
 }

@@ -13,10 +13,13 @@
   &__link {
     font-family: Roboto Condensed;
 
-    font-size: 25px;
     color: #fff;
     transition: all 0.3s linear;
+    font-size: 22px;
 
+    @include onDesktop {
+      font-size: 25px;
+    }
     &:hover {
       color: #2f303a;
     }

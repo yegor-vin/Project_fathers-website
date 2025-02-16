@@ -5,15 +5,25 @@
 
   &__title {
     font-family: Roboto Condensed;
-    font-size: 22px;
     font-weight: 700;
+    font-size: 20px;
+
+    @include onDesktop {
+      font-size: 22px;
+    }
   }
   &__img {
-    width: 300px;
-
+    width: 100%;
+    
     cursor: pointer;
     transition: 0.3s ease-in;
 
+    @include onTablet {
+      width: 200px;
+    }
+    @include onDesktop {
+      width: 300px;
+    }
     &:hover {
       opacity: 0.6;
     }
@@ -21,7 +31,12 @@
 
   &__image-container {
     display: flex;
-    
-    justify-content: space-evenly;
+
+    flex-direction: column;
+    gap: 30px;
+    @include onTablet {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
   }
 }

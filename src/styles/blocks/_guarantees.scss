@@ -11,15 +11,29 @@
 
   &__title {
     font-family: Roboto Condensed;
+    font-weight: 700px;
+    margin: 0 0 48px;
 
-    font-size: 48px;
-    margin: 0 0 56px;
+    font-size: 32px;
+
+    @include onTablet {
+      font-size: 40px;
+      margin: 0 0 56px;
+    }
+
+    @include onDesktop {
+      font-size: 48px;
+    }
   }
 
   &__text {
     font-family: Roboto Condensed;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1;
+
+    @include onDesktop {
+      font-size: 20px;
+    }
   }
 
   &__list {
@@ -30,11 +44,16 @@
 
   &__link {
     font-family: Roboto Condensed;
-    font-size: 22px;
     font-weight: 700;
+    font-size: 20px;
     color: black;
-   text-decoration:underline;
+    text-decoration:underline;
     transition: color 0.3s linear;
+
+    @include onDesktop {
+
+      font-size: 22px;
+    }
   }
 
   &__link:hover {

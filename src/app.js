@@ -60,13 +60,20 @@ showSlides();
 
 function showSlides() {
   const slides = document.querySelectorAll('.slideshow__img-container');
+  // set all slides display to none
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = 'none';
   }
+
+  // increase slide number
   slideIndex++;
+
+
+  
   if (slideIndex > slides.length) {
     slideIndex = 1;
   }
+
   slides[slideIndex - 1].style.display = 'block';
   setTimeout(showSlides, 1700);
 }

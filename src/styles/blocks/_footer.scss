@@ -1,22 +1,47 @@
 .footer {
-  padding: 60px 0 ;
-  background: linear-gradient(135deg, #e79d14 40%, #2f303a 0%);
- 
+  padding: 60px 0;
+  background: linear-gradient(135deg, #e79d14 37%, #2f303a 0%);
+
+
+  @include onDesktop {
+    background: linear-gradient(135deg, #e79d14 40%, #2f303a 0%);
+  }
 
   &__content {
     display: flex;
-    gap: 400px;
+
+    @include onTablet {
+      gap: 250px;
+    }
+
+    @include onDesktop {
+      gap: 400px;
+    }
   }
 
   &__left-block {
     display: flex;
-  gap: 100px;
-  align-items: end;
+    flex-direction: column;
+
+    gap: 30px;
+
+    @include onDesktop {
+      flex-direction: row;
+      gap: 100px;
+      align-items: end;
+    }
   }
 
   &__map {
-    width: 250px;
-    height: 250px;
-
+    width: 150px;
+    height: 150px;
+    @include onTablet {
+      width: 200px;
+      height: 200px;
+    }
+    @include onDesktop {
+      width: 250px;
+      height: 250px;
+    }
   }
 }

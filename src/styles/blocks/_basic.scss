@@ -1,5 +1,9 @@
 .basic {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @include onDesktop {
     gap: 40px;
+  }
 }
