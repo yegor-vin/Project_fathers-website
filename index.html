@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEBSITE</title>
-    <link rel="stylesheet" href="/Project_fathers-website/main.1b21fb35.css">
-    <script src="/Project_fathers-website/app.cc670166.js" defer=""></script>
+    <link rel="stylesheet" href="/Project_fathers-website/main.fcf8969d.css">
+    <script src="/Project_fathers-website/app.7425fc36.js" defer=""></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
   </head>
   <body class="page__body">
     <header class="header">
@@ -18,42 +17,56 @@
           <a class="header__logo logo" href="/Project_fathers-website/index.html">
             <img src="/Project_fathers-website/Logo.c67c8e43.png" alt="Акумулятори для дому Dawnice" class="logo__image">
           </a>
-          <nav class="header__nav nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="#about-us">Про нас</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#batteries">Акумулятори</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#guarantees">Гарантії</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#useful">Корисна інформація</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#contacts">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__menu menu">
-            <div class="header_dropdown dropdown">
-              <div class="dropdown__icon-container">
-                <svg class="dropdown__icon">
-                  <use href="/Project_fathers-website/sprite.049cd7ba.svg#phone"></use>
-                </svg>
-              </div>
+          <div class="header__burger-menu burger-menu">
+            <div class="burger-menu__content">
+              <nav class="header__nav nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link" href="#about-us">Про нас</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#batteries">Акумулятори</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#guarantees">Гарантії</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#useful">Корисна інформація</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#contacts">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
 
-              <div class="dropdown__content">
-                <a href="tel:+380675059113" class="dropdown__link">+38 067 505 9113</a><a href="tel:+380674402138" class="dropdown__link">+38 067 440 2138</a>
+              <div class="header__menu">
+                <div class="header__dropdown dropdown">
+                  <div class="dropdown__icon-container">
+                    <svg class="dropdown__icon">
+                      <use href="/Project_fathers-website/sprite.27571e97.svg#phone"></use>
+                    </svg>
+                  </div>
+
+                  <div class="dropdown__content">
+                    <a href="tel:+380675059113" class="dropdown__link">+38 067 505 9113</a><a href="tel:+380674402138" class="dropdown__link">+38 067 440 2138</a>
+                  </div>
+                </div>
               </div>
+              <button type="button" class="header__close-btn">
+                <svg class="header__close-icon">
+                  <use href="/Project_fathers-website/sprite.27571e97.svg#closeBtn"></use>
+                </svg>
+              </button>
             </div>
           </div>
+          <button type="button" class="header__burger-menu-btn">
+            <svg class="header__burger-icon">
+              <use href="/Project_fathers-website/sprite.27571e97.svg#burger-icon"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
-
 
     <section class="hero">
       <h1 class="hero__title">
@@ -141,7 +154,7 @@
               накопиченні енергії за допомогою різноманітних ємностей і
               конфігурацій, забезпечуючи ідеальну відповідність потребам вашого
               домогосподарства. Насолоджуйтесь статистикою в режимі реального
-              часу щодо споживання енергії та продуктивність системи завдяки
+              часу щодо споживання енергії та продуктивності системи завдяки
               інтуїтивно зрозумілим інтерфейсам моніторингу. Відчуйте надійне
               резервне живлення під час відключень, забезпечуючи безперервну
               роботу основних приладів і пристроїв. Акумулятори Dawnice
@@ -175,7 +188,7 @@
                     <h4 class="info__title">Привабливий дизайн</h4>
                     <p class="info__text">
                       Dawnice LiFePo4 акумулятори компактні за формою, зі
-                      зручними кнопки налаштування та готовими до підключення
+                      зручними кнопками налаштування та готовими до підключення
                       кабелями та аксесуарами в комплекті. Акумулятори можуть
                       бути встановлені паралельно, а інтегрована система захисту
                       BMS ідеально підходить для гібридних та автономних
@@ -255,11 +268,15 @@
               </div>
             </div>
 
-        
+            <a href="/Project_fathers-website/files\Wall-mounted-User-Manual.pdf" class="panel__link" target="_blank">
+            Інструкція на акумулятори Dawnice
+          </a>
 
-            <a href="/Project_fathers-website/files\dawnice_datasheet.pdf" class="panel__link">
+            <a href="/Project_fathers-website/files\dawnice_datasheet.pdf" class="panel__link-btn" target="_blank">
               Каталог
             </a>
+
+            <p class="panel__text-price"><i><b>Вартість акумулятора Dawnice 51.2в, 10кВт - 95 000 грн</b></i></p>
           </div>
         </div>
       </div>
@@ -270,7 +287,7 @@
         <h2 class="guarantees__title">Гарантії</h2>
         <div class="guarantees__content">
           <p class="guarantees__text">
-            Завод-виробник надає 10-річну на акумулятори Dawnice. З даною
+            Завод-виробник надає 10-річну гарантію на акумулятори Dawnice. З даною
             гарантією Ви можете ознайомитися на нашому сайті. Для гарантії
             клієнту достатньо лише видаткової накладної на придбання
             акумуляторів в нашій компанії.
@@ -285,10 +302,11 @@
 
           <ul class="guarantees__list">
             <li class="guarantees__item">
-              <a href="/Project_fathers-website/files\Wall-mounted-User-Manual.pdf" class="guarantees__link">
-                Інструкція на акумулятори Dawnice
+              <a href="/Project_fathers-website/files\Dawnice-Warranty-Agreement.pdf" class="guarantees__link" target="_blank">
+                Гарантія на акумулятори Dawnice
               </a>
             </li>
+      
             <li class="guarantees__item guarantees__item--certificate certificate">
               <h3 class="certificate__title">Сертифікати</h3>
               <div class="certificate__image-container">
@@ -302,11 +320,7 @@
                 <img class="certificate__img certificate__img-2" src="/Project_fathers-website/Certification-2.1b22a36b.jpg" alt="Сертифікати">
               </div>
             </li>
-            <li class="guarantees__item">
-              <a href="/Project_fathers-website/files\Dawnice-Warranty-Agreement.pdf" class="guarantees__link">
-                Гарантія на акумулятори Dawnice
-              </a>
-            </li>
+           
           </ul>
         </div>
       </div>
@@ -366,7 +380,7 @@
               </video>
             </div>
 
-            <a href="/Project_fathers-website/files\wifi-manual.pdf" class="wifi__btn-link">
+            <a href="/Project_fathers-website/files\wifi-manual.pdf" class="wifi__btn-link" target="_blank">
               Інструкція приєднання
             </a>
           </div>
@@ -430,8 +444,6 @@
                 <div class="slideshow__text">10 / 10</div>
                 <img class="slideshow__image" src="/Project_fathers-website/slideshow-10.cda3785b.jpg">
               </div>
-
-          
             </div>
           </div>
 
@@ -468,8 +480,8 @@
               </ul>
             </div>
 
-            <a href="/Project_fathers-website/files\general-specification.pdf" class="general__btn-link">
-              Інструкція приєднання
+            <a href="/Project_fathers-website/files\general-specification.pdf" class="general__btn-link" target="_blank">
+              Специфікація 20кВт
             </a>
           </div>
         </div>
@@ -502,20 +514,20 @@
                   <p class="address__underground-text">Тараса Шевченка</p>
                 </div>
                 <address class="address__address">
-                  м. Київ, вул. Межигірська 85
+                  м. Київ, вул. Межигірська, 85
                 </address>
               </div>
 
               <div class="basic__time time">
                 <svg class="time__icon">
-                  <use href="/Project_fathers-website/sprite.049cd7ba.svg#clock"></use>
+                  <use href="/Project_fathers-website/sprite.27571e97.svg#clock"></use>
                 </svg>
                 <p class="time__text">Пн-Пт: 9:00 - 17:00</p>
               </div>
 
               <div class="basic__phone phone">
                 <svg class="phone__icon">
-                  <use href="/Project_fathers-website/sprite.049cd7ba.svg#phone"></use>
+                  <use href="/Project_fathers-website/sprite.27571e97.svg#phone"></use>
                 </svg>
 
                 <ul class="phone__numbers-list">

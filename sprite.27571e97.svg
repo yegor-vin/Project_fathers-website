@@ -1,0 +1,25 @@
+<svg>
+
+<symbol id="phone" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6703_634)">
+<path d="M26.68 20.5067C25.04 20.5067 23.4533 20.24 21.9733 19.76C21.5067 19.6 20.9867 19.72 20.6267 20.08L18.5333 22.7067C14.76 20.9067 11.2267 17.5067 9.34667 13.6L11.9467 11.3867C12.3067 11.0133 12.4133 10.4933 12.2667 10.0267C11.7733 8.54667 11.52 6.96 11.52 5.32C11.52 4.6 10.92 4 10.2 4H5.58667C4.86667 4 4 4.32 4 5.32C4 17.7067 14.3067 28 26.68 28C27.6267 28 28 27.16 28 26.4267V21.8267C28 21.1067 27.4 20.5067 26.68 20.5067Z" fill="#fff"/>
+</g>
+<defs>
+<clipPath id="clip0_6703_634">
+<rect width="32" height="32" fill="white"/>
+</clipPath>
+</defs>
+</symbol>
+
+<symbol id="clock" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"  clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 11h6v1h-7v-9h1v8z"/>
+</symbol>
+
+<symbol id="burger-icon" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z" fill="currentColor"/>
+</symbol>
+
+<symbol id="closeBtn" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z" fill="currentColor"/>
+</symbol>
+
+</svg>
