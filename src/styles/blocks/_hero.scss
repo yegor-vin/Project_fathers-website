@@ -1,23 +1,45 @@
 .hero {
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url(../images/hero-image.jpg);
   height: 100vh;
   width: 100%;
-  background-position: center;
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/hero-image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+ background-position: 88%;
+  
+
+  @include onTablet {
+    background-position: 100% ;
+
+  }
+
+  @include onDesktop {
+    background-position: center;
+  }
 
   display: flex;
   justify-content: center;
   align-items: center;
 
   &__title {
-    color: #e8e8e8  ;
+    color: #e8e8e8;
     font-family: Roboto Condensed;
 
     font-weight: 700;
     text-transform: uppercase;
 
+    text-align: center;
+
+    font-size: 35px;
+    @include onTablet {
+      font-size: 50px;
+      padding: 0 0 120px;
+    }
+
     @include onDesktop {
+      padding: 0;
+      text-align: left;
       font-size: 65px;
     }
 

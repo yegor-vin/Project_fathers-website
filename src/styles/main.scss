@@ -2,11 +2,13 @@
 @import 'utils/normalize';
 @import 'utils/mixins';
 
+@import 'blocks/page';
 @import 'blocks/header';
 @import 'blocks/logo';
 @import 'blocks/container';
 @import 'blocks/nav';
 @import 'blocks/dropdown';
+@import 'blocks/burger-menu';
 @import 'blocks/hero';
 @import 'blocks/about-us';
 @import 'blocks/batteries';

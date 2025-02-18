@@ -12,7 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
   </head>
   <body class="page__body">
     <header class="header">
@@ -25,50 +24,60 @@
               class="logo__image"
             />
           </a>
-          <div class="header__burger-menu">
-            <nav class="header__nav nav">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link" href="#about-us">Про нас</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#batteries">Акумулятори</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#guarantees">Гарантії</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#useful">Корисна інформація</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#contacts">Контакти</a>
-                </li>
-              </ul>
-            </nav>
-            
-            <div class="header__menu menu">
-              <div class="header_dropdown dropdown">
-                <div class="dropdown__icon-container">
-                  <svg class="dropdown__icon">
-                    <use href="./images/icons/sprite.svg#phone"></use>
-                  </svg>
-                </div>
-  
-                <div class="dropdown__content">
-                  <a href="tel:+380675059113" class="dropdown__link"
-                    >+38 067 505 9113</a
-                  ><a href="tel:+380674402138" class="dropdown__link"
-                    >+38 067 440 2138</a
-                  >
+          <div class="header__burger-menu burger-menu">
+            <div class="burger-menu__content">
+              <nav class="header__nav nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link" href="#about-us">Про нас</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#batteries">Акумулятори</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#guarantees">Гарантії</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#useful">Корисна інформація</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#contacts">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="header__menu">
+                <div class="header__dropdown dropdown">
+                  <div class="dropdown__icon-container">
+                    <svg class="dropdown__icon">
+                      <use href="./images/icons/sprite.svg#phone"></use>
+                    </svg>
+                  </div>
+
+                  <div class="dropdown__content">
+                    <a href="tel:+380675059113" class="dropdown__link"
+                      >+38 067 505 9113</a
+                    ><a href="tel:+380674402138" class="dropdown__link"
+                      >+38 067 440 2138</a
+                    >
+                  </div>
                 </div>
               </div>
+              <button type="button" class="header__close-btn">
+                <svg class="header__close-icon">
+                  <use href="./images/icons/sprite.svg#closeBtn"></use>
+                </svg>
+              </button>
             </div>
           </div>
-        
+          <button type="button" class="header__burger-menu-btn">
+            <svg class="header__burger-icon">
+              <use href="./images/icons/sprite.svg#burger-icon"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
-
 
     <section class="hero">
       <h1 class="hero__title">
@@ -134,13 +143,16 @@
           <div class="batteries__image-container">
             <img
               class="batteries__main-img"
-              src="./images/10kw-solar-battery-600x600.jpg "
+              src="./images/10kw-solar-battery-600x600.jpg"
               alt="Акумулятор"
             />
 
             <ul class="batteries__list slider">
               <li class="slider__item">
-                <a class="slider__link" href="./images/10kw-solar-battery-600x600.jpg">
+                <a
+                  class="slider__link"
+                  href="./images/10kw-solar-battery-600x600.jpg"
+                >
                   <img
                     src="./images/10kw-solar-battery-600x600.jpg"
                     alt="Акумулятор"
@@ -149,7 +161,10 @@
                 </a>
               </li>
               <li class="slider__item">
-                <a class="slider__link" href="./images/10kwh-battery-sale-points-600x600.webp">
+                <a
+                  class="slider__link"
+                  href="./images/10kwh-battery-sale-points-600x600.webp"
+                >
                   <img
                     src="./images/10kwh-battery-sale-points-600x600.webp"
                     alt="Головні фішки акумуляторів"
@@ -158,7 +173,10 @@
                 </a>
               </li>
               <li class="slider__item">
-                <a class="slider__link" href="./images/10kw-battery-connection-diagram-600x600.webp">
+                <a
+                  class="slider__link"
+                  href="./images/10kw-battery-connection-diagram-600x600.webp"
+                >
                   <img
                     src="./images/10kw-battery-connection-diagram-600x600.webp"
                     alt="Схема під'єднання акумулятора"
@@ -167,7 +185,10 @@
                 </a>
               </li>
               <li class="slider__item">
-                <a class="slider__link" href="./images/10kw-lithium-ion-battery-600x600.webp">
+                <a
+                  class="slider__link"
+                  href="./images/10kw-lithium-ion-battery-600x600.webp"
+                >
                   <img
                     src="./images/10kw-lithium-ion-battery-600x600.webp"
                     alt="Приклад під'єднання акумуляторів"
@@ -188,7 +209,7 @@
               накопиченні енергії за допомогою різноманітних ємностей і
               конфігурацій, забезпечуючи ідеальну відповідність потребам вашого
               домогосподарства. Насолоджуйтесь статистикою в режимі реального
-              часу щодо споживання енергії та продуктивність системи завдяки
+              часу щодо споживання енергії та продуктивності системи завдяки
               інтуїтивно зрозумілим інтерфейсам моніторингу. Відчуйте надійне
               резервне живлення під час відключень, забезпечуючи безперервну
               роботу основних приладів і пристроїв. Акумулятори Dawnice
@@ -226,7 +247,7 @@
                     <h4 class="info__title">Привабливий дизайн</h4>
                     <p class="info__text">
                       Dawnice LiFePo4 акумулятори компактні за формою, зі
-                      зручними кнопки налаштування та готовими до підключення
+                      зручними кнопками налаштування та готовими до підключення
                       кабелями та аксесуарами в комплекті. Акумулятори можуть
                       бути встановлені паралельно, а інтегрована система захисту
                       BMS ідеально підходить для гібридних та автономних
@@ -322,11 +343,18 @@
               </div>
             </div>
 
-        
+            <a
+            href="./files/Wall-mounted-User-Manual.pdf"
+            class="panel__link" target="_blank"
+          >
+            Інструкція на акумулятори Dawnice
+          </a>
 
-            <a href="./files/dawnice_datasheet.pdf" class="panel__link">
+            <a href="./files/dawnice_datasheet.pdf" class="panel__link-btn" target="_blank">
               Каталог
             </a>
+
+            <p class="panel__text-price"><i><b>Вартість акумулятора Dawnice 51.2в, 10кВт - 95 000 грн</b></i></p>
           </div>
         </div>
       </div>
@@ -337,7 +365,7 @@
         <h2 class="guarantees__title">Гарантії</h2>
         <div class="guarantees__content">
           <p class="guarantees__text">
-            Завод-виробник надає 10-річну на акумулятори Dawnice. З даною
+            Завод-виробник надає 10-річну гарантію на акумулятори Dawnice. З даною
             гарантією Ви можете ознайомитися на нашому сайті. Для гарантії
             клієнту достатньо лише видаткової накладної на придбання
             акумуляторів в нашій компанії.
@@ -353,12 +381,13 @@
           <ul class="guarantees__list">
             <li class="guarantees__item">
               <a
-                href="./files/Wall-mounted-User-Manual.pdf"
-                class="guarantees__link"
+                href="./files/Dawnice-Warranty-Agreement.pdf"
+                class="guarantees__link" target="_blank"
               >
-                Інструкція на акумулятори Dawnice
+                Гарантія на акумулятори Dawnice
               </a>
             </li>
+      
             <li
               class="guarantees__item guarantees__item--certificate certificate"
             >
@@ -382,14 +411,7 @@
                 />
               </div>
             </li>
-            <li class="guarantees__item">
-              <a
-                href="./files/Dawnice-Warranty-Agreement.pdf"
-                class="guarantees__link"
-              >
-                Гарантія на акумулятори Dawnice
-              </a>
-            </li>
+           
           </ul>
         </div>
       </div>
@@ -458,7 +480,7 @@
               </video>
             </div>
 
-            <a href="./files/wifi-manual.pdf" class="wifi__btn-link">
+            <a href="./files/wifi-manual.pdf" class="wifi__btn-link" target="_blank">
               Інструкція приєднання
             </a>
           </div>
@@ -522,8 +544,6 @@
                 <div class="slideshow__text">10 / 10</div>
                 <img class="slideshow__image" src="./images/slideshow-10.jpg" />
               </div>
-
-          
             </div>
           </div>
 
@@ -562,7 +582,7 @@
 
             <a
               href="./files/general-specification.pdf"
-              class="general__btn-link"
+              class="general__btn-link" target="_blank"
             >
               Специфікація 20кВт
             </a>
@@ -585,7 +605,9 @@
               <a href="#guarantees" class="section-list__link">Гарантії</a>
             </li>
             <li class="section-list__item">
-              <a href="#useful" class="section-list__link">Корисна інформація</a>
+              <a href="#useful" class="section-list__link"
+                >Корисна інформація</a
+              >
             </li>
           </ul>
           <div class="footer__left-block">
@@ -597,7 +619,7 @@
                   <p class="address__underground-text">Тараса Шевченка</p>
                 </div>
                 <address class="address__address">
-                  м. Київ, вул. Межигірська 85
+                  м. Київ, вул. Межигірська, 85
                 </address>
               </div>
 
@@ -628,7 +650,8 @@
               </div>
             </div>
 
-            <iframe class="footer__map"
+            <iframe
+              class="footer__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.146480068121!2d30.496046292309742!3d50.47561671232421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce0c72caaa1b%3A0x3907752bf8421bf0!2z0YPQuy4g0JzQtdC20LjQs9C-0YDRgdC60LDRjywgODUsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1738954355866!5m2!1sru!2sua"
               width="600"
               height="450"

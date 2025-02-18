@@ -1,15 +1,22 @@
 .dropdown {
-  position: relative;
-  display: inline-block;
+  display: none;
+
+  @include onDesktop {
+    position: relative;
+    display: inline-block;
+  }
 
   &__content {
     display: none;
-    position: absolute;
-    background-color: #2a2a34;
-    min-width: 200px;
-    z-index: 1;
-    right: 0;
+    @include onDesktop {
+      display: none;
 
+      position: absolute;
+      background-color: #2a2a34;
+      min-width: 200px;
+      z-index: 1;
+      right: 0;
+    }
   }
 
   &:hover &__content {
@@ -17,15 +24,18 @@
   }
 
   &__icon-container {
- height: 120px;
-    width: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s linear;
+    display: none;
+    @include onDesktop {
+      height: 120px;
+      width: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s linear;
+    }
   }
   &:hover &__icon-container {
-    background:rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
   }
 
   &__link {

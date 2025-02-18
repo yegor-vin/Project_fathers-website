@@ -1,10 +1,34 @@
 .slideshow {
-  max-width: 600px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
   position: relative;
   margin: 0 auto;
 
+  height: 390px;
+  @include onTablet {
+    height: 600px;
+  }
+
   &__img-container {
-    display: none;
+    position: absolute;
+
+    opacity: 0;
+    transition: opacity 500ms;
+    height: 100%;
+    width: 280px;
+
+    @include onTablet {
+      height: 600px;
+      width: 400px;
+    }
+
+    &--visible {
+      opacity: 1;
+    }
+
+    border-radius: 8px;
+    overflow: hidden;
   }
 
   &__text {

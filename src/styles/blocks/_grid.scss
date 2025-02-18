@@ -33,7 +33,7 @@
       grid-column: 1/4;
     }
     @include onDesktop {
-      grid-column: 1/8;
+      grid-column: 1/7;
     }
   }
 
@@ -44,7 +44,7 @@
       grid-column: 4/-1;
     }
     @include onDesktop {
-      grid-column: 6/-1;
+      grid-column: 7/-1;
     }
   }
 
@@ -55,7 +55,7 @@
     }
 
     @include onDesktop {
-      grid-column: 8/-1;
+      grid-column: 7/-1;
     }
   }
 
@@ -64,7 +64,7 @@
       grid-column: 1/4;
     }
     @include onDesktop {
-      grid-column: 1/6;
+      grid-column: 1/7;
     }
   }
 }

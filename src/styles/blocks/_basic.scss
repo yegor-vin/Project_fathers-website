@@ -1,6 +1,7 @@
 .basic {
   display: flex;
   flex-direction: column;
+
   gap: 30px;
 
   @include onDesktop {
