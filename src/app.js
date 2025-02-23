@@ -65,12 +65,12 @@ function showSlides() {
     slides[i].style.display = 'none';
   } */
 
-    slides.forEach(slide => slide.classList.remove('slideshow__img-container--visible'))
+  slides.forEach((slide) =>
+    slide.classList.remove('slideshow__img-container--visible')
+  );
 
   // increase slide number
   slideIndex++;
-
-
 
   if (slideIndex > slides.length) {
     slideIndex = 1;
@@ -97,36 +97,26 @@ batteriesGallery.addEventListener('click', (event) => {
   mainImg.src = imageLink;
 });
 
+const burgerMenuBtn = document.querySelector('.header__burger-menu-btn');
+const burgerMenu = document.querySelector('.header__burger-menu');
 
-const burgerMenuBtn = document.querySelector('.header__burger-menu-btn')
-const burgerMenu = document.querySelector('.header__burger-menu')
-
-const closeBtn = document.querySelector('.header__close-btn')
+const closeBtn = document.querySelector('.header__close-btn');
 const navLinks = document.querySelectorAll('.nav__link');
 
+// Function to close the burger menu
+function closeBurgerMenu() {
+  burgerMenu.classList.remove('burger-menu--is-active');
+}
 
-  // Function to close the burger menu
-  function closeBurgerMenu() {
-    burgerMenu.classList.remove('burger-menu--is-active');
-  }
-
-  // Add click event listener to each navigation link
-  navLinks.forEach(link => {
-    link.addEventListener('click', closeBurgerMenu);
-  });
-
-
+// Add click event listener to each navigation link
+navLinks.forEach((link) => {
+  link.addEventListener('click', closeBurgerMenu);
+});
 
 burgerMenuBtn.addEventListener('click', () => {
-  burgerMenu.classList.add('burger-menu--is-active')
-
-
-})
-
+  burgerMenu.classList.add('burger-menu--is-active');
+});
 
 closeBtn.addEventListener('click', () => {
-  burgerMenu.classList.remove('burger-menu--is-active')
-
- 
-
-})
+  burgerMenu.classList.remove('burger-menu--is-active');
+});

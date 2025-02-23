@@ -6,7 +6,7 @@
  
   background-size: cover;
   background-repeat: no-repeat;
-background-position: 60%;
+background-position:60%;
 
 
   
@@ -17,6 +17,8 @@ background-position: 60%;
     background-position: 100% ;
 
   }
+
+
 
   @include onDesktop {
     background-position: center;
@@ -40,6 +42,14 @@ background-position: 60%;
       font-size: 50px;
       padding: 0 0 120px;
     }
+
+
+    @include onTabletXL {
+      text-align: right;
+      font-size: 55px;
+     
+    }
+  
 
     @include onDesktop {
       padding: 0;
