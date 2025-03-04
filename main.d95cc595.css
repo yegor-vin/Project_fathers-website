@@ -279,7 +279,7 @@ button {
 .hero {
   height: calc(100vh - 90px);
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/hero-image--phone.3d4fcb0a.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/Project_fathers-website/hero-image--phone.655e21c6.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 60%;
@@ -294,18 +294,18 @@ button {
 }
 @media screen and (min-width: 744px) and (orientation: landscape) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/hero-image.b3ecaafd.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/Project_fathers-website/hero-image.24365404.jpg);
     background-position: 100%;
   }
 }
 @media screen and (min-width: 744px) and (orientation: portrait) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/hero-image--tablet.822d51dd.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/Project_fathers-website/hero-image--tablet.c54736c2.jpg);
   }
 }
 @media screen and (min-width: 1260px) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/hero-image.b3ecaafd.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/Project_fathers-website/hero-image.24365404.jpg);
     background-position: center;
   }
 }
@@ -1606,4 +1606,4 @@ button {
   color: red;
 }
 
-/*# sourceMappingURL=/main.48b3db1d.css.map */
+/*# sourceMappingURL=/Project_fathers-website/main.d95cc595.css.map */
