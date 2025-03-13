@@ -1,26 +1,33 @@
 .hero {
-  height: 100vh;
+  height: calc(100vh - 90px);
   width: 100%;
-  
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/hero-image--phone.jpg);
- 
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/hero-image--phone.jpg);
+
   background-size: cover;
   background-repeat: no-repeat;
-background-position:60%;
+  background-position: 60%;
 
-
-  
-  
-  
   @include onTablet {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/hero-image.jpg);
-    background-position: 100% ;
+    height: calc(100vh - 120px);
 
+    @media (orientation: landscape) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(../images/hero-image.jpg);
+  
+      background-position: 100%;
+    }
+
+    @media (orientation: portrait) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(../images/hero-image--tablet.jpg);
+    }
   }
 
-
-
   @include onDesktop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../images/hero-image.jpg);
     background-position: center;
   }
 
@@ -43,13 +50,10 @@ background-position:60%;
       padding: 0 0 120px;
     }
 
-
     @include onTabletXL {
-      text-align: right;
       font-size: 55px;
-     
+
     }
-  
 
     @include onDesktop {
       padding: 0;
